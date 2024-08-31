@@ -40,14 +40,14 @@ would create a new product
     "tagIds" : [1, 2, 3, 4]
 }
 would update an existing product
-- A POST request for http://localhost:3001/api/tags with along with JSON formatted with a body like { "tag_name" : "Classical music" } would create a new tag
+- A PUT request for http://localhost:3001/api/tags with along with JSON formatted with a body like { "tag_name" : "Classical music" } would create a new tag
 - A DELETE request for http://localhost:3001/api/categories/:ID where :ID is a category id, will delete the item with the corresponding ID.
 - A DELETE request for http://localhost:3001/api/products/:ID where :ID is a product id, will delete the item with the corresponding ID.
 - A DELETE request for http://localhost:3001/api/tasks/:ID> where :ID is a task id, will delete the item with the corresponding ID.
 
 A full video walkthrough, demonstrating the use of the backend using Insomnia can be found at:
 
-https://drive.google.com/file/d/1hLRGLtTNTQhgEioZlFMfP6JnhLhySe7d/view?usp=sharing
+[e-commerce video](https://drive.google.com/file/d/1XqocMnvWWu_Br2o6SsmVJbYAU2iSi-UU/view?usp=sharing)
 
 ## Contributing
 All backend express.js and Sequelize code was refactored by Warren Shan. Starter code supplied by GIT user: Xandromus.
