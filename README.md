@@ -21,8 +21,8 @@ As the application was developed using express.js, employing API end-points, the
 - A GET request for http://localhost:3001/api/categories will supply a JSON list of all categories. Similarly a GET request for http://localhost:3001/api/categories/:ID (where :ID is a category id) will return details for that category ID.
 - A GET request for http://localhost:3001/api/products will supply a JSON list of all products. Similarly a GET request for http://localhost:3001/api/products/:ID (where :ID is a product id) will return details for that product ID.
 - A GET request for http://localhost:3001/api/tags will supply a JSON list of all tags. Similarly a GET request for http://localhost:3001/api/tags/:ID (where :ID is a tag id) will return details for that tag ID.
-- A PUT request for http://localhost:3001/api/categories with along with JSON formatted with a body like { "category_name" : "Underwear" } would create a new category
-- A PUT request for http://localhost:3001/api/products with along with JSON formatted with a body like
+- A POST request for http://localhost:3001/api/categories with along with JSON formatted with a body like { "category_name" : "Underwear" } would create a new category
+- A POST request for http://localhost:3001/api/products with along with JSON formatted with a body like
 {
     "product_name" : "Basketball",
     "price" : 200.00,
@@ -30,12 +30,24 @@ As the application was developed using express.js, employing API end-points, the
     "tagIds" : [1, 2, 3, 4]
 }
 would create a new product
-- A PUT request for http://localhost:3001/api/tags with along with JSON formatted with a body like { "tag_name" : "Classical music" } would create a new tag
+- A POST request for http://localhost:3001/api/tags with along with JSON formatted with a body like { "tag_name" : "Folk music" } would create a new tag
+- A PUT request for http://localhost:3001/api/categories with along with JSON formatted with a body like { "category_name" : "Undergarments" } would update an existing category
+- A PUT request for http://localhost:3001/api/products with along with JSON formatted with a body like
+{
+    "product_name" : "Baseball",
+    "price" : 200.00,
+    "stock" : 3,
+    "tagIds" : [1, 2, 3, 4]
+}
+would update an existing product
+- A POST request for http://localhost:3001/api/tags with along with JSON formatted with a body like { "tag_name" : "Classical music" } would create a new tag
 - A DELETE request for http://localhost:3001/api/categories/:ID where :ID is a category id, will delete the item with the corresponding ID.
 - A DELETE request for http://localhost:3001/api/products/:ID where :ID is a product id, will delete the item with the corresponding ID.
 - A DELETE request for http://localhost:3001/api/tasks/:ID> where :ID is a task id, will delete the item with the corresponding ID.
 
 A full video walkthrough, demonstrating the use of the backend using Insomnia can be found at:
+
+https://drive.google.com/file/d/1hLRGLtTNTQhgEioZlFMfP6JnhLhySe7d/view?usp=sharing
 
 ## Contributing
 All backend express.js and Sequelize code was refactored by Warren Shan. Starter code supplied by GIT user: Xandromus.
